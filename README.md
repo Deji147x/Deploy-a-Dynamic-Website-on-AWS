@@ -1,4 +1,4 @@
-![Alt text](Dynamic Web App.png)
+![Alt text](Dynamic.png)
 
 # E-Commerce Web App Deployment on AWS
 

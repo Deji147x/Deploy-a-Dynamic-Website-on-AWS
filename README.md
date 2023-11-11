@@ -1,3 +1,5 @@
+![Alt text](Dynamic Web App.png)
+
 # E-Commerce Web App Deployment on AWS
 
 ## Project Overview

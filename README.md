@@ -22,7 +22,7 @@ This project involves the deployment of a dynamic e-commerce web application on 
 - **AMI Creation**: Involves creating an AMI from the configured EC2 instance.
 
 ## Deployment Scripts
-Below is the bash scripts used to deploy the web app on an EC2 instance:
+Install software necessary for the application to run:
 
 ```bash
 # This command updates all the packages on the server to their latest versions
@@ -81,6 +81,8 @@ grep -i "memory_limit" /etc/php.ini
 grep "max_execution_time" /etc/php.ini
 ```
 
+Install and configure the application:
+
 ```bash
 # This command downloads the contents of the specified S3 bucket to the '/var/www/html' directory on the EC2 instance
 sudo aws s3 sync s3://aosnote-nest-app-code /var/www/html
@@ -119,6 +121,8 @@ sudo sed -i "/^DB_PASSWORD=/ s/=.*$/=azeezs123/" .env
 # This command will restart the Apache server
 sudo service httpd restart
 ```
+
+Migrate data into RDS with Flyway:
 
 ```bash
 # Download and extract Flyway
